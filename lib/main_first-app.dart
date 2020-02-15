@@ -6,21 +6,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Welcome to Flutter',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('flutter demo'),
+          title: Text('Welcome to Flutter'),
         ),
-        body: HomeContent(),
+        body: Center(
+          child: Text('Hello World'),
+        ),
       ),
-    );
-  }
-}
-
-class HomeContent extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ListView(
-      children: <Widget>[],
     );
   }
 }
