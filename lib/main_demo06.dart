@@ -17,23 +17,22 @@ class MyApp extends StatelessWidget {
 }
 
 class HomeContent extends StatelessWidget {
+  List<Widget> _getData() {
+    List<Widget> list = List();
+
+    for (int i = 0; i < 20; i++) {
+      list.add(ListTile(
+        title: Text('$i title'),
+      ));
+    }
+
+    return list;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      crossAxisCount: 2,
-      children: <Widget>[
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-      ],
+    return ListView(
+      children: this._getData(),
     );
   }
 }

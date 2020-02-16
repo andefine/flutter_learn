@@ -19,20 +19,14 @@ class MyApp extends StatelessWidget {
 class HomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      crossAxisCount: 2,
+    return ListView(
+      padding: EdgeInsets.all(10),
       children: <Widget>[
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
-        Text('title'),
+        ListTile(
+          leading: Icon(Icons.settings),
+          title: Text('积分兑换山东i回复级即使东京覅欧舒丹就'),
+          subtitle: Text('分电视剧哦i发'),
+        )
       ],
     );
   }
